@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Guggolás",
+        "description": "Saját testsúlyos guggolás vállszéles terpeszben.",
+        "categories": [
+            "Láb",
+            "Saját testsúly"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Fekvőtámasz",
+        "description": "Klasszikus fekvőtámasz.",
+        "categories": [
+            "Mell",
+            "Kar",
+            "Saját testsúly"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Kitörés",
+        "description": "Alternáló kitörések előre.",
+        "categories": [
+            "Láb"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Plank",
+        "description": "Alkaron támaszkodás egyenes háttal.",
+        "categories": [
+            "Törzs",
+            "Saját testsúly"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Kézisúlyzós vállból nyomás",
+        "description": "Ülve vagy állva nyomás felfelé.",
+        "categories": [
+            "Váll",
+            "Kar",
+            "Súlyzós"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Barpí (Négyütemű)",
+        "description": "Dinamikus teljes testgyakorlat.",
+        "categories": [
+            "Kardió",
+            "Saját testsúly"
+        ]
+    }
+]
