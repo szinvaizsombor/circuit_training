@@ -22,8 +22,6 @@ def save_exercises(exercises, file_path=DATA_FILE):
 def add_exercise(name, categories, description="", file_path=DATA_FILE):
     """Új gyakorlatot ad hozzá az adatbázishoz."""
     exercises = load_exercises(file_path)
-    
-    # Egyedi ID generálása
     new_id = max([e.get("id", 0) for e in exercises], default=0) + 1
     
     new_exercise = {
@@ -38,44 +36,41 @@ def add_exercise(name, categories, description="", file_path=DATA_FILE):
     return new_exercise
 
 
+def get_all_categories(file_path=DATA_FILE):
+    """Kigyűjti az összes létező kategóriát ábécé sorrendben."""
+    exercises = load_exercises(file_path)
+    cats = set()
+    for ex in exercises:
+        for c in ex.get("categories", []):
+            cats.add(c)
+    return sorted(list(cats))
+
+
 def generate_workout(selected_categories, count, file_path=DATA_FILE):
-    """
-    Véletlenszerűen kiválaszt 'count' darab gyakorlatot, amelyek 
-    tartalmazzák a megadott kategóriák legalább egyikét.
-    """
+    """Véletlenszerűen kiválaszt 'count' darab gyakorlatot a megadott kategóriákból."""
     all_exercises = load_exercises(file_path)
     
-    # Szűrés: az a gyakorlat felel meg, aminek van közös kategóriája a kiválasztottakkal
-    matching_exercises = []
-    selected_set = set(selected_categories)
-    
-    for ex in all_exercises:
-        ex_categories = set(ex.get("categories", []))
-        if not selected_set.isdisjoint(ex_categories):  # Ha van közös kategória
-            matching_exercises.append(ex)
-
-    # Ha kevesebb a találat, mint a kért szám, akkor az összes találatot visszaadjuk
+    if not selected_categories:
+        matching_exercises = all_exercises
+    else:
+        selected_set = set(selected_categories)
+        matching_exercises = [
+            ex for ex in all_exercises 
+            if not selected_set.isdisjoint(set(ex.get("categories", [])))
+        ]
+        
     sample_size = min(count, len(matching_exercises))
     return random.sample(matching_exercises, sample_size)
 
 
-# --- KIS TESZT ÉS MINTA ADATOK FELTÖLTÉSE ---
-if __name__ == "__main__":
-    # Ha még nincs adatbázis, feltöltjük néhány minta gyakorlattal
-    if not os.path.exists(DATA_FILE) or len(load_exercises()) == 0:
-        print("Minta adatok feltöltése...")
-        add_exercise("Guggolás", ["Láb", "Saját testsúly"], "Saját testsúlyos guggolás vállszéles terpeszben.")
-        add_exercise("Fekvőtámasz", ["Mell", "Kar", "Saját testsúly"], "Klasszikus fekvőtámasz.")
-        add_exercise("Kitörés", ["Láb"], "Alternáló kitörések előre.")
-        add_exercise("Plank", ["Törzs", "Saját testsúly"], "Alkaron támaszkodás egyenes háttal.")
-        add_exercise("Kézisúlyzós vállból nyomás", ["Váll", "Kar", "Súlyzós"], "Ülve vagy állva nyomás felfelé.")
-        add_exercise("Barpí (Négyütemű)", ["Kardió", "Saját testsúly"], "Dinamikus teljes testgyakorlat.")
-
-    print("\n--- Összes meglévő gyakorlat ---")
-    for ex in load_exercises():
-        print(f"[{ex['id']}] {ex['name']} - Kategóriák: {', '.join(ex['categories'])}")
-
-    print("\n--- Köredzés generálás teszt (2 db 'Láb' vagy 'Kardió' gyakorlat) ---")
-    workout = generate_workout(selected_categories=["Láb", "Kardió"], count=2)
-    for i, ex in enumerate(workout, 1):
-        print(f"{i}. {ex['name']} ({', '.join(ex['categories'])})")
+def get_replacement_exercise(current_workout, selected_categories, file_path=DATA_FILE):
+    """Kiválaszt egy olyan új gyakorlatot, ami még nincs benne a jelenlegi edzésben."""
+    all_matching = generate_workout(selected_categories, count=999, file_path=file_path)
+    current_ids = {ex['id'] for ex in current_workout}
+    
+    # Olyan gyakorlatok, amik nincsenek a jelenlegi edzésben
+    available = [ex for ex in all_matching if ex['id'] not in current_ids]
+    
+    if available:
+        return random.choice(available)
+    return None
