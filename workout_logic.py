@@ -29,8 +29,14 @@ def save_exercises(exercises, file_path=DATA_FILE):
 
 
 def add_exercise(name, equipment, ex_type, description="", file_path=DATA_FILE):
-    """Új gyakorlatot ad hozzá külön eszköz és típus kategóriákkal."""
+    """Új gyakorlatot ad hozzá, ha még nem létezik azonos nevű elem."""
     exercises = load_exercises(file_path)
+    
+    # Duplikáció ellenőrzése név alapján (kis- és nagybetűktől függetlenül)
+    for ex in exercises:
+        if ex.get("name", "").strip().lower() == name.strip().lower():
+            return None  # Jelzi, hogy a gyakorlat már létezik
+    
     new_id = max([e.get("id", 0) for e in exercises], default=0) + 1
     
     new_exercise = {

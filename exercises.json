@@ -1,57 +1,975 @@
 [
     {
-        "id": 1,
-        "name": "Guggolás",
-        "description": "Saját testsúlyos guggolás vállszéles terpeszben.",
-        "categories": [
-            "Láb",
+        "id": 7,
+        "name": "TRX evezés",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Pull"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "TRX Hamstring Curl",
+        "description": "",
+        "equipment": [
+            "TRX",
+            "Szivacs"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "TRX Oblique Crunch",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Thruster",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg",
+            "Push"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "L-sit compression",
+        "description": "",
+        "equipment": [
+            "Szivacs"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Mászás",
+        "description": "",
+        "equipment": [
             "Saját testsúly"
+        ],
+        "type": [
+            "Core",
+            "Push"
         ]
     },
     {
-        "id": 2,
-        "name": "Fekvőtámasz",
-        "description": "Klasszikus fekvőtámasz.",
-        "categories": [
-            "Mell",
-            "Kar",
+        "id": 13,
+        "name": "Kozák guggolás",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó",
             "Saját testsúly"
+        ],
+        "type": [
+            "Leg"
         ]
     },
     {
-        "id": 3,
-        "name": "Kitörés",
-        "description": "Alternáló kitörések előre.",
-        "categories": [
-            "Láb"
+        "id": 14,
+        "name": "Lateral szökdelés step padon",
+        "description": "",
+        "equipment": [
+            "Step pad"
+        ],
+        "type": [
+            "Leg",
+            "Pörgető"
         ]
     },
     {
-        "id": 4,
-        "name": "Plank",
-        "description": "Alkaron támaszkodás egyenes háttal.",
-        "categories": [
-            "Törzs",
+        "id": 15,
+        "name": "TRX inverz tárogatás",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Pull"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "TRX SL Squat",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Floor Press",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Push"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Homorítás + Lapockahúzás",
+        "description": "",
+        "equipment": [
+            "Szivacs",
+            "Szalag"
+        ],
+        "type": [
+            "Core",
+            "Pull"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Burpee + Távolugrás",
+        "description": "",
+        "equipment": [
             "Saját testsúly"
+        ],
+        "type": [
+            "Pörgető",
+            "Push",
+            "Leg"
         ]
     },
     {
-        "id": 5,
-        "name": "Kézisúlyzós vállból nyomás",
-        "description": "Ülve vagy állva nyomás felfelé.",
-        "categories": [
-            "Váll",
-            "Kar",
-            "Súlyzós"
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Barpí (Négyütemű)",
-        "description": "Dinamikus teljes testgyakorlat.",
-        "categories": [
-            "Kardió",
+        "id": 20,
+        "name": "Square Skips",
+        "description": "",
+        "equipment": [
             "Saját testsúly"
+        ],
+        "type": [
+            "Pörgető",
+            "Leg"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Oldalazás Popó Banddel",
+        "description": "",
+        "equipment": [
+            "Popó Band"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 22,
+        "name": "TRX húzódzkodás",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Pull"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Merevlábas Felhúzás",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Törpejárás",
+        "description": "",
+        "equipment": [
+            "Saját testsúly",
+            "Tárcsa"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Láb Leengedés Fekvésben",
+        "description": "",
+        "equipment": [
+            "Szivacs"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Föl-Föl Le-Le",
+        "description": "",
+        "equipment": [
+            "Step pad"
+        ],
+        "type": [
+            "Pörgető"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "TRX W-evezés",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Pull"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "TRX Korcsolyázó Szökdelés",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Pörgető",
+            "Leg"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "TRX Tárogatás",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Push"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Hipthrust",
+        "description": "",
+        "equipment": [
+            "Saját testsúly",
+            "Kézisúlyzó",
+            "Homokzsák",
+            "Bosu"
+        ],
+        "type": [
+            "Leg",
+            "Core"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Pók/Rákjárás",
+        "description": "",
+        "equipment": [
+            "Saját testsúly"
+        ],
+        "type": [
+            "Pörgető",
+            "Push"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Side Plank Raises",
+        "description": "",
+        "equipment": [
+            "Bosu",
+            "Szivacs",
+            "Tárcsa"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "TRX Power Pull",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Pull",
+            "Core"
+        ]
+    },
+    {
+        "id": 34,
+        "name": "TRX Inverz Hegymászó",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Leg",
+            "Core"
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Állighúzás",
+        "description": "",
+        "equipment": [
+            "Kettlebell"
+        ],
+        "type": [
+            "Pull"
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Slider Core Variations",
+        "description": "",
+        "equipment": [
+            "Slider"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Haladó Kitörés",
+        "description": "",
+        "equipment": [
+            "Saját testsúly",
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 38,
+        "name": "TRX Dip",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Push"
+        ]
+    },
+    {
+        "id": 39,
+        "name": "TRX Squatjump",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Leg",
+            "Pörgető"
+        ]
+    },
+    {
+        "id": 40,
+        "name": "TRX Crunch/Bicska",
+        "description": "",
+        "equipment": [
+            "TRX",
+            "Szivacs"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 41,
+        "name": "Guggolás magastartásban",
+        "description": "",
+        "equipment": [
+            "Kézisúlyzó",
+            "Rúd"
+        ],
+        "type": [
+            "Leg",
+            "Mobility"
+        ]
+    },
+    {
+        "id": 42,
+        "name": "Haladó SL RDL",
+        "description": "",
+        "equipment": [
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 43,
+        "name": "Russian Twist",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó",
+            "Tárcsa",
+            "Szivacs"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 44,
+        "name": "Tűzcsap",
+        "description": "",
+        "equipment": [
+            "Popó Band",
+            "Szivacs"
+        ],
+        "type": [
+            "Leg",
+            "Core"
+        ]
+    },
+    {
+        "id": 45,
+        "name": "TRX Rollout",
+        "description": "",
+        "equipment": [
+            "TRX",
+            "Szivacs"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 46,
+        "name": "Sumo Squat (+)",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 47,
+        "name": "Suitcase Carry",
+        "description": "",
+        "equipment": [
+            "Kézisúlyzó",
+            "Kettlebell"
+        ],
+        "type": [
+            "Core",
+            "Pull"
+        ]
+    },
+    {
+        "id": 48,
+        "name": "Push Up Row",
+        "description": "",
+        "equipment": [
+            "Kézisúlyzó",
+            "Szivacs"
+        ],
+        "type": [
+            "Push",
+            "Pull",
+            "Core"
+        ]
+    },
+    {
+        "id": 49,
+        "name": "Pogo hops",
+        "description": "",
+        "equipment": [
+            "Saját testsúly"
+        ],
+        "type": [
+            "Leg",
+            "Pörgető"
+        ]
+    },
+    {
+        "id": 50,
+        "name": "TRX Kitöréből Felugrás",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Leg",
+            "Pörgető"
+        ]
+    },
+    {
+        "id": 51,
+        "name": "Step Pad Lunge to Step Down",
+        "description": "",
+        "equipment": [
+            "Step pad",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg",
+            "Balance"
+        ]
+    },
+    {
+        "id": 52,
+        "name": "Prisoner Get Up",
+        "description": "Variations: \n-Liberty Statue\n-Jumping\n-etc.",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó",
+            "Saját testsúly",
+            "Szivacs"
+        ],
+        "type": [
+            "Push",
+            "Leg"
+        ]
+    },
+    {
+        "id": 53,
+        "name": "Reverse Plank to L-sit",
+        "description": "",
+        "equipment": [
+            "Slider"
+        ],
+        "type": [
+            "Core",
+            "Push"
+        ]
+    },
+    {
+        "id": 54,
+        "name": "Fekvő \"Húz-Forgat-Nyom\"",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Szivacs"
+        ],
+        "type": [
+            "Pull",
+            "Core",
+            "Push"
+        ]
+    },
+    {
+        "id": 55,
+        "name": "Swimmer",
+        "description": "",
+        "equipment": [
+            "Szivacs",
+            "Szalag",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 56,
+        "name": "Bölcső Bicska",
+        "description": "",
+        "equipment": [
+            "Szivacs",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 57,
+        "name": "V-sit Press / Bölcső Press",
+        "description": "",
+        "equipment": [
+            "Kézisúlyzó",
+            "Szivacs"
+        ],
+        "type": [
+            "Core",
+            "Push"
+        ]
+    },
+    {
+        "id": 58,
+        "name": "Indián Szökdelés",
+        "description": "",
+        "equipment": [
+            "Saját testsúly"
+        ],
+        "type": [
+            "Pörgető",
+            "Leg"
+        ]
+    },
+    {
+        "id": 59,
+        "name": "Step Pad Fekvő",
+        "description": "",
+        "equipment": [
+            "Step pad"
+        ],
+        "type": [
+            "Push"
+        ]
+    },
+    {
+        "id": 60,
+        "name": "Bird-Dog",
+        "description": "",
+        "equipment": [
+            "Saját testsúly",
+            "Szivacs"
+        ],
+        "type": [
+            "Push",
+            "Core",
+            "Balance"
+        ]
+    },
+    {
+        "id": 61,
+        "name": "TRX Fekvő",
+        "description": "",
+        "equipment": [
+            "TRX"
+        ],
+        "type": [
+            "Push"
+        ]
+    },
+    {
+        "id": 62,
+        "name": "Adductor Sideplank",
+        "description": "",
+        "equipment": [
+            "Bosu",
+            "Step pad",
+            "Szivacs"
+        ],
+        "type": [
+            "Leg",
+            "Core"
+        ]
+    },
+    {
+        "id": 63,
+        "name": "Clock Foot Reach",
+        "description": "",
+        "equipment": [
+            "Slider",
+            "Saját testsúly"
+        ],
+        "type": [
+            "Leg",
+            "Balance"
+        ]
+    },
+    {
+        "id": 64,
+        "name": "Pull over",
+        "description": "",
+        "equipment": [
+            "Bosu",
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Pull",
+            "Push",
+            "Core"
+        ]
+    },
+    {
+        "id": 65,
+        "name": "SL RDL",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg",
+            "Balance"
+        ]
+    },
+    {
+        "id": 66,
+        "name": "Toe Tap Push Up",
+        "description": "",
+        "equipment": [
+            "Szivacs",
+            "Saját testsúly"
+        ],
+        "type": [
+            "Core",
+            "Push"
+        ]
+    },
+    {
+        "id": 67,
+        "name": "Lábtartáscserés Step Pad Szökdelés",
+        "description": "",
+        "equipment": [
+            "Step pad"
+        ],
+        "type": [
+            "Pörgető",
+            "Leg"
+        ]
+    },
+    {
+        "id": 68,
+        "name": "Tippy Toe Carry",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg"
+        ]
+    },
+    {
+        "id": 69,
+        "name": "Medicin Felülés",
+        "description": "",
+        "equipment": [
+            "Medicin Labda"
+        ],
+        "type": [
+            "Core",
+            "Push"
+        ]
+    },
+    {
+        "id": 70,
+        "name": "Kettlebell Swing",
+        "description": "",
+        "equipment": [
+            "Kettlebell"
+        ],
+        "type": [
+            "Pörgető",
+            "Leg",
+            "Core"
+        ]
+    },
+    {
+        "id": 71,
+        "name": "Gorilla Row",
+        "description": "",
+        "equipment": [
+            "Kettlebell"
+        ],
+        "type": [
+            "Pull"
+        ]
+    },
+    {
+        "id": 72,
+        "name": "Fóka",
+        "description": "",
+        "equipment": [
+            "Slider"
+        ],
+        "type": [
+            "Core",
+            "Push"
+        ]
+    },
+    {
+        "id": 73,
+        "name": "Good Mornings",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg",
+            "Core"
+        ]
+    },
+    {
+        "id": 74,
+        "name": "Burpee + Step Pad Skip",
+        "description": "",
+        "equipment": [
+            "Step pad"
+        ],
+        "type": [
+            "Pörgető",
+            "Push",
+            "Leg"
+        ]
+    },
+    {
+        "id": 75,
+        "name": "Inchworm/Pike Push Up",
+        "description": "",
+        "equipment": [
+            "Saját testsúly"
+        ],
+        "type": [
+            "Core",
+            "Push"
+        ]
+    },
+    {
+        "id": 76,
+        "name": "Plank Áthúzás",
+        "description": "",
+        "equipment": [
+            "Kézisúlyzó",
+            "Kettlebell"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 77,
+        "name": "Szélmalom Fekvő",
+        "description": "",
+        "equipment": [
+            "Saját testsúly"
+        ],
+        "type": [
+            "Mobility",
+            "Push"
+        ]
+    },
+    {
+        "id": 78,
+        "name": "Távolugrás",
+        "description": "",
+        "equipment": [
+            "Slider",
+            "Saját testsúly"
+        ],
+        "type": [
+            "Pörgető",
+            "Leg"
+        ]
+    },
+    {
+        "id": 79,
+        "name": "Long Plank <-> Planch Lean",
+        "description": "",
+        "equipment": [
+            "Saját testsúly"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 80,
+        "name": "Sideplank Abduction",
+        "description": "",
+        "equipment": [
+            "Szivacs",
+            "Saját testsúly"
+        ],
+        "type": [
+            "Leg",
+            "Core"
+        ]
+    },
+    {
+        "id": 81,
+        "name": "Bölcső to Straddle Sit",
+        "description": "",
+        "equipment": [
+            "Szivacs",
+            "Saját testsúly"
+        ],
+        "type": [
+            "Core"
+        ]
+    },
+    {
+        "id": 82,
+        "name": "Clean and Press",
+        "description": "",
+        "equipment": [
+            "Kettlebell",
+            "Rúd"
+        ],
+        "type": [
+            "Leg",
+            "Pull",
+            "Push"
+        ]
+    },
+    {
+        "id": 83,
+        "name": "SL Reverse Kettlebell Press",
+        "description": "",
+        "equipment": [
+            "Kettlebell"
+        ],
+        "type": [
+            "Push",
+            "Balance"
+        ]
+    },
+    {
+        "id": 84,
+        "name": "Squatjump",
+        "description": "",
+        "equipment": [
+            "Saját testsúly",
+            "Medicin Labda",
+            "Kézisúlyzó"
+        ],
+        "type": [
+            "Leg",
+            "Pörgető"
+        ]
+    },
+    {
+        "id": 85,
+        "name": "Calf Raises",
+        "description": "",
+        "equipment": [
+            "Step pad",
+            "Kettlebell"
+        ],
+        "type": [
+            "Leg",
+            "Balance"
         ]
     }
 ]

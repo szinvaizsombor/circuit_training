@@ -301,6 +301,10 @@ with tab3:
                         if item not in final_tp:
                             final_tp.append(item)
 
-                wl.add_exercise(name.strip(), final_eq, final_tp, description.strip())
-                st.success(f"A(z) '{name}' gyakorlat sikeresen elmentve!")
-                st.rerun()
+                result = wl.add_exercise(name.strip(), final_eq, final_tp, description.strip())
+                
+                if result is None:
+                    st.error(f"❌ A(z) '{name.strip()}' nevű gyakorlat már létezik az adatbázisban!")
+                else:
+                    st.success(f"A(z) '{name}' gyakorlat sikeresen elmentve!")
+                    st.rerun()
