@@ -1,0 +1,8 @@
+# Ha lokálisan teszteled az appot, akkor ezekre az állományokra szükséged lesz, viszont Githubra nem szabad/érdemes feltölteni őket. Ez a fájl jelöli ki a git-nek, hogy mit hagyjon figyelmen kívül
+
+.env
+.venv
+__pycache__/
+*.pyc
+.cache
+music_cache.json
